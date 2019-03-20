@@ -1,0 +1,64 @@
+package modelo;
+
+import java.util.ArrayList;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Vendedor extends Pessoa {
+	
+	private int codigo;
+	private double salario;
+	private ArrayList<Venda> vendas = new ArrayList<Venda>();
+	
+	public Vendedor() {}
+	
+	public Vendedor(String n, String en, String dt, int co, double sa) {
+		super(n, en, dt);
+		this.codigo = co;
+		this.salario = sa;
+	//	this.vendas = vendas;
+	}
+
+	public int getCodigo() {
+		return this.codigo;
+	}
+
+	public void setCodigo(int co) {
+		this.codigo = co;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+
+	public ArrayList<Venda> getVendas() {
+		return vendas;
+	}
+
+	public void setVendas(ArrayList<Venda> vendas) {
+		this.vendas = vendas;
+	}
+	
+	
+	public void adicionar(Venda v) {
+		vendas.add(v);
+		v.setVendedor(this);
+	}
+	
+	public void remover (Venda v) {
+		vendas.remove(v);
+		v.setVendedor(null);
+	}
+	
+
+	@Override
+	public String toString() {
+		return "Vendedor [Nome: " + super.getNome() + "; Codigo = " + codigo + "; salario = " + salario + "; vendas = " + vendas + "]";
+	}
+	
+}

@@ -1,0 +1,358 @@
+package fachada;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//import dao.DAO;
+//import dao.DAOCarro;
+//import dao.DAOCliente;
+//import dao.DAOVenda;
+//import dao.DAOVendedor;
+import daojpa.*;
+import modelo.Carro;
+import modelo.Cliente;
+import modelo.Venda;
+import modelo.Vendedor;
+
+public class Fachada {
+
+	private static DAOCarro daocarro = new DAOCarro();
+	private static DAOCliente daocliente = new DAOCliente();
+	private static DAOVenda daovenda = new DAOVenda();
+	private static DAOVendedor daovendedor = new DAOVendedor();
+
+	public static void inicializar() {
+		DAO.open();
+	}
+
+	public static void finalizar() {
+		DAO.close();
+	}
+
+	//Métodos da Fachada para cadastros [CREATE]
+
+	//Cadastrar Carro
+	public static Carro cadastrarCarro(String nome, double preco, String fabricante, String categoria) throws Exception {
+
+		DAO.begin();			
+		Carro c = daocarro.readByNome(nome);
+
+		if(c != null) {
+			DAO.rollback();
+			throw new Exception("Carro ja cadastrado: " + nome);
+		}
+
+		c = new Carro(nome, preco, fabricante, categoria);
+		daocarro.create(c);		
+		DAO.commit();
+		return c;
+	}
+
+	//Cadastrar Cliente
+	public static Cliente cadastrarCliente(String nome, String en, String dt, String cpf, String em, ArrayList<String> te) throws Exception {
+
+		DAO.begin();
+		Cliente c = daocliente.readByNome(nome);
+
+		if(c != null) {
+			DAO.rollback();
+			throw new Exception("Cliente ja cadastrado: " + nome);
+		}
+		//te.add(e)
+		
+		
+		c = new Cliente(nome, en, dt, cpf, em, te);
+		daocliente.create(c);
+		DAO.commit();
+		return c;
+	}
+
+	//Cadastrar Vendedor
+	public static Vendedor cadastrarVendedor(String nome, String en, String dt, int cod, double sal) throws Exception {
+
+		DAO.begin();
+		Vendedor v = daovendedor.readByNome(nome);
+
+		if(v != null) {
+			DAO.rollback();
+			throw new Exception ("Vendedor ja cadastrado: " + nome);
+		}
+		
+		v = new Vendedor(nome, en, dt, cod, sal);
+		daovendedor.create(v);
+		DAO.commit();
+		return v;
+
+	}
+	
+	////////// Adicionar venda na lista do vendedor
+	
+	//Cadastrar Venda
+	public static Venda cadastrarVenda(String nomec, String nomev, String nomeca, String dt, String pa) throws Exception {
+
+		DAO.begin();
+		Venda v;
+		Cliente cl = daocliente.readByNome(nomec);
+		Vendedor ve = daovendedor.readByNome(nomev);
+		Carro c = daocarro.readByNome(nomeca);
+		
+		if(cl == null) {
+			DAO.rollback();
+			throw new Exception ("Venda nao pode ser cadastrada: Cliente " + nomec + " nao encontrado");
+		}
+		
+		if(ve == null) {
+			DAO.rollback();
+			throw new Exception ("Venda nao pode ser cadastrada: Vendedor " + nomev + " nao encontrado");
+		}
+		
+		if(c == null) {
+			DAO.rollback();
+			throw new Exception ("Venda nao pode ser cadastrada: Carro " + nomeca + " nao encontrado");
+		}
+		
+		v = new Venda(cl, ve, c, dt, pa);
+		//ve.adicionar(v);
+		
+		daovenda.create(v);
+		//daovendedor.update(ve);
+		DAO.commit();
+		return v;
+
+	}
+
+
+	//Métodos da Fachada para Listagens [READ]
+
+	//Listagem dos carros
+	public static String listarCarros() {
+		List<Carro> aux = daocarro.readAll();
+		String texto = "\nListagem dos carros: ";
+		if (aux.isEmpty())
+			texto += "não tem carro cadastrado";
+		else {	
+			for(Carro c: aux) {
+				texto += "\n" + c;
+			}
+		}
+		return texto;		
+	}
+
+	//Listagem dos clientes
+	public static String listarClientes() {
+		List<Cliente> aux = daocliente.readAll();
+		String texto = "\nListagem dos clientes: ";
+		if (aux.isEmpty())
+			texto += "não tem cliente cadastrado";
+		else {	
+			for(Cliente c: aux) {
+				texto += "\n" + c; 
+			}
+		}
+		return texto;		
+	}
+
+	//Listagem das vendas
+	public static String listarVendas() {
+		List<Venda> aux = daovenda.readAll();
+		String texto = "\nListagem das vendas: ";
+		if (aux.isEmpty())
+			texto += "não tem venda cadastrada";
+		else {	
+			for(Venda v: aux) {
+				texto += "\n" + v; 
+			}
+		}
+		return texto;		
+	}
+
+	//Listagem dos vendedores
+	public static String listarVendedores() {
+		List<Vendedor> aux = daovendedor.readAll();
+		String texto = "\nListagem dos vendedores: ";
+		if (aux.isEmpty())
+			texto += "não tem vendedor cadastrado";
+		else {	
+			for(Vendedor v: aux) {
+				texto += "\n" + v; 
+			}
+		}
+		return texto;		
+	}
+
+
+	//Métodos da Fachada para Atualizações [UPDATE]
+
+	//Atualizar Carro
+	public static void atualizarCarro(String nome, String novo) throws Exception{
+
+		DAO.begin();
+		Carro c = (Carro) daocarro.readByNome(nome);
+
+		if (c == null) {
+			DAO.rollback();
+			throw new Exception ("Carro " + nome + " não cadastrado");
+		}
+		
+		c.setNome(novo);
+		c = (Carro) daocarro.update(c);
+		DAO.commit();
+	}
+
+	//Atualizar Cliente
+	public static void atualizarCliente(String nome, String novo) throws Exception{
+
+		DAO.begin();
+		Cliente c = (Cliente) daocliente.readByNome(nome);
+
+		if (c == null) {
+			DAO.rollback();
+			throw new Exception ("Cliente " + nome + " não cadastrado");
+		}
+			
+		c.setNome(novo);
+		c = (Cliente) daocliente.update(c);
+		DAO.commit();
+	}
+
+	//Atualizar Vendedor
+	public static void atualizarVendedor(String nome, String novo) throws Exception{
+
+		DAO.begin();
+		Vendedor v = daovendedor.readByNome(nome);
+
+		if (v == null) {
+			DAO.rollback();
+			throw new Exception ("Vendedor " + nome + " não cadastrado");
+		}
+		
+		v.setNome(novo);
+		v = daovendedor.update(v);
+		DAO.commit();
+	}
+
+	//Atualizar Venda
+	public static void atualizarVenda(int n, int novo) throws Exception{
+
+		DAO.begin();
+		Venda v = daovenda.readById(novo);
+
+		if (v == null) {
+			DAO.rollback();
+			throw new Exception ("Venda " + n + " não cadastrada");
+		}
+		
+		v.setId(novo);
+		v = daovenda.update(v);
+		DAO.commit();
+	}
+
+
+	//Métodos da Fachada para Remoções [DELETE]
+
+	//Apagar Carro
+	public static void apagarCarro(String nome) throws Exception {
+
+		DAO.begin();
+		Carro c = daocarro.readByNome(nome);
+
+		if(c == null) {
+			DAO.rollback();
+			throw new Exception("Carro nao cadastrado: " + nome);
+		}
+			
+		daocarro.delete(c);
+		DAO.commit();
+	}
+
+	//Apagar Cliente
+	public static Cliente apagarCliente(String nome) throws Exception {
+
+		DAO.begin();
+		Cliente c = daocliente.readByNome(nome);
+
+		if(c == null) {
+			DAO.rollback();
+			throw new Exception ("Cliente nao cadastrado: " + nome);
+		}
+		
+		daocliente.delete(c);
+		DAO.commit();
+		return c;
+	}
+
+	//Apagar Vendedor
+	public static Vendedor apagarVendedor(String nome) throws Exception {
+
+		DAO.begin();
+		Vendedor v = daovendedor.readByNome(nome);
+
+		if(v == null) {
+			DAO.rollback();
+			throw new Exception ("Vendedor nao cadastrado: " + nome);
+		}
+		
+		daovendedor.delete(v);
+		DAO.commit();
+		return v;
+	}
+
+	//Apagar Venda
+	public static Venda apagarVenda(int id) throws Exception {
+
+		DAO.begin();
+		Venda v = daovenda.readById(id);
+
+		if(v == null) {
+			DAO.rollback();
+			throw new Exception ("Venda nao cadastrada: " + id);
+		}
+			
+		daovenda.delete(v);
+		DAO.commit();
+		return v;
+	}
+
+
+	//Métodos para Consultas
+
+	//Método para consultar carros por fabricante
+	public static String consultaCarrosPorFabricante (String nome) throws Exception {
+		
+		List<Carro> carros = daocarro.consultarCarrosDaFabricante(nome);
+		String texto = "Listagem dos carros do fabricante: " + nome + "\n";
+		
+		if (carros.isEmpty()) {
+			texto = "Não existem fabricantes para esse carro";
+		}else {
+			for(Carro c: carros)
+				texto += c.getNome()+ " \n";
+		}
+		return texto;
+	}
+	
+	//Método para consultar carros por categoria
+	public static String consultaCarrosPorCategoria (String nome) throws Exception {
+
+		List<Carro> carros = daocarro.consultarCarrosPorCategoria(nome);
+		String texto = "Listagem dos carros da categoria: " + nome + "\n";
+
+		if (carros.isEmpty()) {
+			texto = "Não existem categorias para esse carro";
+		}else {
+			for(Carro c: carros)
+				texto += c.getNome()+ " \n";
+		}
+		return texto;
+	}
+	
+	public static String consultaNumeroCarros () throws Exception {
+		
+		int n = daocarro.consultarTotalCarros();
+		String texto = "Número total de carros na concessionária: " + n;
+		
+		return texto;
+		
+	}
+
+}

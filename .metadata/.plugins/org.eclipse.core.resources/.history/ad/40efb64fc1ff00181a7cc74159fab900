@@ -1,0 +1,65 @@
+package modelo;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Carro {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private String nome;
+	private double preco;
+	private String fabricante;
+	private String categoria;
+	//Relacionamento
+	
+	public Carro() {}
+	
+	public Carro(String n, double p, String f, String c) {
+		this.nome = n;
+		this.preco = p;
+		this.fabricante = f;
+		this.categoria = c;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+	public String getFabricante() {
+		return this.fabricante;
+	}
+
+	public void setFabricante(String fabricante) {
+		this.fabricante = fabricante;
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
+	@Override
+	public String toString() {
+		return "Carro [Nome = " + nome + "; Preco = " + preco + "; Fabricante = " + fabricante + "; Categoria = " + categoria + "]";
+	}
+	
+}

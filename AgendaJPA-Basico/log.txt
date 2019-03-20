@@ -1,0 +1,42 @@
+[EL Fine]: server: 2018-11-13 15:33:30.226--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2018-11-13 15:33:30.816--ServerSession(1509563803)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Produto] is set to [FIELD].
+[EL Config]: metadata: 2018-11-13 15:33:30.906--ServerSession(1509563803)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Pessoa] is set to [FIELD].
+[EL Config]: metadata: 2018-11-13 15:33:30.916--ServerSession(1509563803)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Aluno] is set to [FIELD].
+[EL Config]: metadata: 2018-11-13 15:33:30.916--ServerSession(1509563803)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Professor] is set to [FIELD].
+[EL Config]: metadata: 2018-11-13 15:33:30.916--ServerSession(1509563803)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Produto] is being defaulted to: Produto.
+[EL Config]: metadata: 2018-11-13 15:33:30.926--ServerSession(1509563803)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Produto] is being defaulted to: PRODUTO.
+[EL Config]: metadata: 2018-11-13 15:33:31.018--ServerSession(1509563803)--Thread(Thread[main,5,main])--The column name for element [preco] is being defaulted to: PRECO.
+[EL Config]: metadata: 2018-11-13 15:33:31.018--ServerSession(1509563803)--Thread(Thread[main,5,main])--The column name for element [estoque] is being defaulted to: ESTOQUE.
+[EL Config]: metadata: 2018-11-13 15:33:31.018--ServerSession(1509563803)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2018-11-13 15:33:31.018--ServerSession(1509563803)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2018-11-13 15:33:31.018--ServerSession(1509563803)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Aluno] is being defaulted to: Aluno.
+[EL Config]: metadata: 2018-11-13 15:33:31.018--ServerSession(1509563803)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Pessoa] is being defaulted to: Pessoa.
+[EL Config]: metadata: 2018-11-13 15:33:31.018--ServerSession(1509563803)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Pessoa] is being defaulted to: PESSOA.
+[EL Config]: metadata: 2018-11-13 15:33:31.018--ServerSession(1509563803)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2018-11-13 15:33:31.018--ServerSession(1509563803)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2018-11-13 15:33:31.018--ServerSession(1509563803)--Thread(Thread[main,5,main])--The column name for element [sexo] is being defaulted to: SEXO.
+[EL Config]: metadata: 2018-11-13 15:33:31.028--ServerSession(1509563803)--Thread(Thread[main,5,main])--The column name for element [dtcadastro] is being defaulted to: DTCADASTRO.
+[EL Config]: metadata: 2018-11-13 15:33:31.038--ServerSession(1509563803)--Thread(Thread[main,5,main])--The discriminator column name for the root inheritance class [modelo.Pessoa] is being defaulted to: DTYPE.
+[EL Config]: metadata: 2018-11-13 15:33:31.038--ServerSession(1509563803)--Thread(Thread[main,5,main])--The column name for element [nota] is being defaulted to: NOTA.
+[EL Config]: metadata: 2018-11-13 15:33:31.038--ServerSession(1509563803)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Professor] is being defaulted to: Professor.
+[EL Config]: metadata: 2018-11-13 15:33:31.038--ServerSession(1509563803)--Thread(Thread[main,5,main])--The column name for element [salario] is being defaulted to: SALARIO.
+[EL Info]: 2018-11-13 15:33:31.748--ServerSession(1509563803)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.3.v20180807-4be1041
+[EL Fine]: connection: 2018-11-13 15:33:32.008--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Config]: connection: 2018-11-13 15:33:32.028--ServerSession(1509563803)--Connection(384587033)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>PostgreSQLPlatform
+	user name=> "postgres"
+	datasource URL=> "jdbc:postgresql://localhost:5433/agenda"
+))
+[EL Config]: connection: 2018-11-13 15:33:32.058--ServerSession(1509563803)--Connection(49752459)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5433/agenda
+	User: postgres
+	Database: PostgreSQL  Version: 9.5.5
+	Driver: PostgreSQL Native Driver  Version: PostgreSQL 9.4 JDBC4.2 (build 1206)
+[EL Info]: connection: 2018-11-13 15:33:32.208--ServerSession(1509563803)--Thread(Thread[main,5,main])--/file:/F:/IFPB/P4/POB/Workspace_POB_18.2/AgendaJPA-Basico/bin/_agenda login successful
+[EL Fine]: sql: 2018-11-13 15:33:33.398--ServerSession(1509563803)--Connection(49752459)--Thread(Thread[main,5,main])--SELECT ID, DTYPE, DTCADASTRO, NOME, SEXO, NOTA, SALARIO FROM PESSOA ORDER BY NOME
+[EL Fine]: sql: 2018-11-13 15:33:33.428--ServerSession(1509563803)--Connection(49752459)--Thread(Thread[main,5,main])--SELECT ID, DTYPE, DTCADASTRO, NOME, SEXO, NOTA FROM PESSOA WHERE (DTYPE = ?)
+	bind => [Aluno]
+[EL Fine]: sql: 2018-11-13 15:33:33.438--ServerSession(1509563803)--Connection(49752459)--Thread(Thread[main,5,main])--SELECT ID, DTYPE, DTCADASTRO, NOME, SEXO, NOTA, SALARIO FROM PESSOA
+[EL Fine]: sql: 2018-11-13 15:33:33.438--ServerSession(1509563803)--Connection(49752459)--Thread(Thread[main,5,main])--SELECT ID, ESTOQUE, NOME, PRECO FROM PRODUTO
+[EL Config]: connection: 2018-11-13 15:33:33.438--ServerSession(1509563803)--Connection(49752459)--Thread(Thread[main,5,main])--disconnect
+[EL Info]: connection: 2018-11-13 15:33:33.438--ServerSession(1509563803)--Thread(Thread[main,5,main])--/file:/F:/IFPB/P4/POB/Workspace_POB_18.2/AgendaJPA-Basico/bin/_agenda logout successful
+[EL Config]: connection: 2018-11-13 15:33:33.438--ServerSession(1509563803)--Connection(384587033)--Thread(Thread[main,5,main])--disconnect

@@ -1,0 +1,36 @@
+package daojpa;
+
+import java.util.List;
+
+import javax.persistence.Query;
+
+import modelo.Vendedor;
+
+public class DAOVendedor extends DAO<Vendedor> {
+	
+	//Método que busca Vendedor pelo nome
+	public Vendedor readByNome (String nome){	
+		Query q = manager.query();
+		q.constrain(Vendedor.class);
+		q.descend("nome").constrain(nome);
+		List<Vendedor> resultados = q.execute();
+		if (resultados.size()>0)
+			return (Vendedor) resultados.get(0);
+		else
+			return null;
+	}
+	
+	//Método que busca Vendedor pelo código
+	public Vendedor readByCodigo (String nome){	
+		Query q = manager.query();
+		q.constrain(Vendedor.class);
+		q.descend("nome").constrain(nome);
+		List<Vendedor> resultados = q.execute();
+		if (resultados.size()>0)
+			return (Vendedor) resultados.get(0);
+		else
+			return null;
+	}
+	
+	
+}

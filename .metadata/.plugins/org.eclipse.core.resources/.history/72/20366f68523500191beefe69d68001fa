@@ -1,0 +1,17 @@
+package aplicacao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class ConsultaCriteria {
+
+	public static void main(String[] args) {
+	
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("aplicacao");
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+		CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
+		
+	}
+
+}

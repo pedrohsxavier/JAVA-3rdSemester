@@ -1,0 +1,22 @@
+[EL Fine]: server: 2018-12-11 14:39:02.186--Thread(Thread[AWT-EventQueue-0,6,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2018-12-11 14:39:03.096--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Produto] is set to [FIELD].
+[EL Config]: metadata: 2018-12-11 14:39:03.201--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field prateleira] is being defaulted to: class modelo.Prateleira.
+[EL Config]: metadata: 2018-12-11 14:39:03.202--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Prateleira] is set to [FIELD].
+[EL Config]: metadata: 2018-12-11 14:39:03.217--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field produtos] is being defaulted to: class modelo.Produto.
+[EL Config]: metadata: 2018-12-11 14:39:03.218--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Produto] is being defaulted to: Produto.
+[EL Config]: metadata: 2018-12-11 14:39:03.225--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Produto] is being defaulted to: PRODUTO.
+[EL Config]: metadata: 2018-12-11 14:39:03.311--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [preco] is being defaulted to: PRECO.
+[EL Config]: metadata: 2018-12-11 14:39:03.315--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [estoque] is being defaulted to: ESTOQUE.
+[EL Config]: metadata: 2018-12-11 14:39:03.316--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [peso] is being defaulted to: PESO.
+[EL Config]: metadata: 2018-12-11 14:39:03.316--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2018-12-11 14:39:03.316--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2018-12-11 14:39:03.317--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Prateleira] is being defaulted to: Prateleira.
+[EL Config]: metadata: 2018-12-11 14:39:03.317--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Prateleira] is being defaulted to: PRATELEIRA.
+[EL Config]: metadata: 2018-12-11 14:39:03.317--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [pesomaximo] is being defaulted to: PESOMAXIMO.
+[EL Config]: metadata: 2018-12-11 14:39:03.318--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2018-12-11 14:39:03.35--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field prateleira] is being defaulted to: ID.
+[EL Config]: metadata: 2018-12-11 14:39:03.35--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [prateleira] is being defaulted to: PRATELEIRA_ID.
+[EL Info]: 2018-12-11 14:39:04.163--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.1.v20171221-bd47e8f
+[EL Severe]: ejb: 2018-12-11 14:39:04.502--ServerSession(1419719404)--Thread(Thread[AWT-EventQueue-0,6,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.1.v20171221-bd47e8f): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: A tentativa de conexão falhou.
+Error Code: 0

@@ -1,0 +1,60 @@
+[EL Fine]: server: 2019-01-29 13:31:28.999--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2019-01-29 13:31:29.248--ServerSession(1414521932)--Thread(Thread[main,5,main])--The access type for the persistent class [class Telefone] is set to [FIELD].
+[EL Config]: metadata: 2019-01-29 13:31:29.275--ServerSession(1414521932)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field pessoa] is being defaulted to: class Pessoa.
+[EL Config]: metadata: 2019-01-29 13:31:29.285--ServerSession(1414521932)--Thread(Thread[main,5,main])--The access type for the persistent class [class Pessoa] is set to [FIELD].
+[EL Config]: metadata: 2019-01-29 13:31:29.293--ServerSession(1414521932)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field telefones] is being defaulted to: class Telefone.
+[EL Config]: metadata: 2019-01-29 13:31:29.296--ServerSession(1414521932)--Thread(Thread[main,5,main])--The alias name for the entity class [class Telefone] is being defaulted to: Telefone.
+[EL Config]: metadata: 2019-01-29 13:31:29.3--ServerSession(1414521932)--Thread(Thread[main,5,main])--The table name for entity [class Telefone] is being defaulted to: TELEFONE.
+[EL Config]: metadata: 2019-01-29 13:31:29.326--ServerSession(1414521932)--Thread(Thread[main,5,main])--The column name for element [numero] is being defaulted to: NUMERO.
+[EL Config]: metadata: 2019-01-29 13:31:29.329--ServerSession(1414521932)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-01-29 13:31:29.329--ServerSession(1414521932)--Thread(Thread[main,5,main])--The alias name for the entity class [class Pessoa] is being defaulted to: Pessoa.
+[EL Config]: metadata: 2019-01-29 13:31:29.33--ServerSession(1414521932)--Thread(Thread[main,5,main])--The table name for entity [class Pessoa] is being defaulted to: PESSOA.
+[EL Config]: metadata: 2019-01-29 13:31:29.331--ServerSession(1414521932)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-01-29 13:31:29.332--ServerSession(1414521932)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-01-29 13:31:29.332--ServerSession(1414521932)--Thread(Thread[main,5,main])--The column name for element [dtcadastro] is being defaulted to: DTCADASTRO.
+[EL Config]: metadata: 2019-01-29 13:31:29.351--ServerSession(1414521932)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field pessoa] is being defaulted to: ID.
+[EL Config]: metadata: 2019-01-29 13:31:29.351--ServerSession(1414521932)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [pessoa] is being defaulted to: PESSOA_ID.
+[EL Info]: 2019-01-29 13:31:30.52--ServerSession(1414521932)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.0.v20170811-d680af5
+[EL Fine]: connection: 2019-01-29 13:31:30.946--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Config]: connection: 2019-01-29 13:31:30.958--ServerSession(1414521932)--Connection(1785507932)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>PostgreSQLPlatform
+	user name=> "postgres"
+	datasource URL=> "jdbc:postgresql://localhost:5432/agenda"
+))
+[EL Config]: connection: 2019-01-29 13:31:31.089--ServerSession(1414521932)--Connection(1084502906)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5432/agenda
+	User: postgres
+	Database: PostgreSQL  Version: 9.5.14
+	Driver: PostgreSQL Native Driver  Version: PostgreSQL 9.4 JDBC4.1 (build 1206)
+[EL Info]: connection: 2019-01-29 13:31:31.166--ServerSession(1414521932)--Thread(Thread[main,5,main])--/file:/C:/Users/IFPB/Dropbox/aula-copratilhada/POB/ProjetosBDNC-MOR - novo/AgendaJPA-Eventos/target/classes/_agenda login successful
+[EL Fine]: sql: 2019-01-29 13:31:31.437--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (DTCADASTRO, NOME) VALUES (?, ?)
+	bind => [2000-01-01, joao]
+[EL Fine]: sql: 2019-01-29 13:31:31.443--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-01-29 13:31:31.452--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--INSERT INTO TELEFONE (NUMERO, PESSOA_ID) VALUES (?, ?)
+	bind => [8888 1111, 5]
+[EL Fine]: sql: 2019-01-29 13:31:31.458--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-01-29 13:31:31.46--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--INSERT INTO TELEFONE (NUMERO, PESSOA_ID) VALUES (?, ?)
+	bind => [8888 2222, 5]
+[EL Fine]: sql: 2019-01-29 13:31:31.462--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-01-29 13:31:31.489--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (DTCADASTRO, NOME) VALUES (?, ?)
+	bind => [2000-01-01, maria]
+[EL Fine]: sql: 2019-01-29 13:31:31.491--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-01-29 13:31:31.493--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--INSERT INTO TELEFONE (NUMERO, PESSOA_ID) VALUES (?, ?)
+	bind => [8888 3333, 6]
+[EL Fine]: sql: 2019-01-29 13:31:31.495--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-01-29 13:31:31.498--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--INSERT INTO TELEFONE (NUMERO, PESSOA_ID) VALUES (?, ?)
+	bind => [8888 4444, 6]
+[EL Fine]: sql: 2019-01-29 13:31:31.5--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-01-29 13:31:31.507--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (DTCADASTRO, NOME) VALUES (?, ?)
+	bind => [2000-01-01, jose]
+[EL Fine]: sql: 2019-01-29 13:31:31.51--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-01-29 13:31:31.515--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (DTCADASTRO, NOME) VALUES (?, ?)
+	bind => [2000-01-01, paulo]
+[EL Fine]: sql: 2019-01-29 13:31:31.518--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-01-29 13:31:31.523--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--INSERT INTO TELEFONE (NUMERO, PESSOA_ID) VALUES (?, ?)
+	bind => [0000000, null]
+[EL Fine]: sql: 2019-01-29 13:31:31.527--ClientSession(1025309396)--Connection(1084502906)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-01-29 13:31:31.545--ServerSession(1414521932)--Connection(1084502906)--Thread(Thread[main,5,main])--SELECT ID, DTCADASTRO, NOME FROM PESSOA WHERE (ID = ?)
+	bind => [1]
+[EL Warning]: 2019-01-29 13:31:31.561--UnitOfWork(1297836716)--Thread(Thread[main,5,main])--Exception [EclipseLink-3002] (Eclipse Persistence Services - 2.7.0.v20170811-d680af5): org.eclipse.persistence.exceptions.ConversionException
+Exception Description: The object [2019-1-29 -3:0:0], of class [class java.lang.String], from mapping [org.eclipse.persistence.mappings.DirectToFieldMapping[dtcadastro-->PESSOA.DTCADASTRO]] with descriptor [RelationalDescriptor(Pessoa --> [DatabaseTable(PESSOA)])], could not be converted to [class java.time.LocalDate].
+Internal Exception: java.time.format.DateTimeParseException: Text '2019-1-29T-3:0:0' could not be parsed, unparsed text found at index 10

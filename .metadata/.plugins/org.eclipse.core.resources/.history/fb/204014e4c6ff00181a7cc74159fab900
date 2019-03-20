@@ -1,0 +1,54 @@
+package modelo;
+
+import java.util.ArrayList;
+
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+
+@Entity
+public class Cliente extends Pessoa {
+
+	private String cpf;
+	private String email;
+	@OneToMany(mappedBy="cliente")
+	private ArrayList<String> telefone = new ArrayList<String>();
+
+	public Cliente() {}
+	
+	public Cliente(String nome, String endereco, String dt, String cpf, String em, ArrayList<String> te) {
+		super(nome, endereco, dt);
+		this.cpf = cpf;
+		this.email = em;
+		this.telefone = te;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String em) {
+		this.email = em;
+	}
+
+	public ArrayList<String> getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(ArrayList<String> te) {
+		this.telefone = te;
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [Nome = " + super.getNome() + "; Endereco = " + super.getEndereco() + "; Data de Nascimento = " + super.getDtNascimento() + "; cpf = " + cpf + "; email = " + email + "; telefone = " + telefone + "]";
+	}
+
+}

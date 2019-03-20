@@ -1,0 +1,34 @@
+package aplicacao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+
+import modelo.Departamento;
+
+public class ConsultaCriteria {
+
+	public static void main(String[] args) {
+	
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("empresa-eclipselink");
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+		CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
+		CriteriaQuery<Departamento> createQuery = criteriaBuilder.createQuery(Departamento.class);
+		Root<Departamento> from = createQuery.from(Departamento.class);
+		
+		CriteriaQuery<Departamento> select = createQuery.select(from);
+		TypedQuery<Departamento> typedQuery = entityManager.createQuery(select);
+		List<Departamento> resultList = typedQuery.getResultList();
+		for(Departamento departamento : resultList) {
+			System.out.println("Id: " + departamento.getId() + "; Departamento: " + departamento.getNome());
+		}
+	
+	}
+
+}

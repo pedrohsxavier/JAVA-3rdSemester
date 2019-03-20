@@ -1,0 +1,4 @@
+ executar carga inicial
+ executar atualizacao otimista com @version comentado
+ executar atualizacao otimista com @version 
+ executar atualizacao pessimista 

@@ -1,0 +1,39 @@
+[EL Fine]: server: 2019-02-05 15:27:10.259--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2019-02-05 15:27:10.835--ServerSession(1318822808)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Produto] is set to [FIELD].
+[EL Config]: metadata: 2019-02-05 15:27:10.934--ServerSession(1318822808)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Venda] is set to [FIELD].
+[EL Config]: metadata: 2019-02-05 15:27:10.95--ServerSession(1318822808)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field produto] is being defaulted to: class modelo.Produto.
+[EL Config]: metadata: 2019-02-05 15:27:10.951--ServerSession(1318822808)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Produto] is being defaulted to: Produto.
+[EL Config]: metadata: 2019-02-05 15:27:10.958--ServerSession(1318822808)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Produto] is being defaulted to: PRODUTO.
+[EL Config]: metadata: 2019-02-05 15:27:11.041--ServerSession(1318822808)--Thread(Thread[main,5,main])--The column name for element [preco] is being defaulted to: PRECO.
+[EL Config]: metadata: 2019-02-05 15:27:11.045--ServerSession(1318822808)--Thread(Thread[main,5,main])--The column name for element [estoque] is being defaulted to: ESTOQUE.
+[EL Config]: metadata: 2019-02-05 15:27:11.046--ServerSession(1318822808)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-02-05 15:27:11.046--ServerSession(1318822808)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-02-05 15:27:11.046--ServerSession(1318822808)--Thread(Thread[main,5,main])--The column name for element [versao] is being defaulted to: VERSAO.
+[EL Config]: metadata: 2019-02-05 15:27:11.049--ServerSession(1318822808)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Venda] is being defaulted to: Venda.
+[EL Config]: metadata: 2019-02-05 15:27:11.05--ServerSession(1318822808)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Venda] is being defaulted to: VENDA.
+[EL Config]: metadata: 2019-02-05 15:27:11.05--ServerSession(1318822808)--Thread(Thread[main,5,main])--The column name for element [vendedor] is being defaulted to: VENDEDOR.
+[EL Config]: metadata: 2019-02-05 15:27:11.05--ServerSession(1318822808)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-02-05 15:27:11.081--ServerSession(1318822808)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field produto] is being defaulted to: ID.
+[EL Config]: metadata: 2019-02-05 15:27:11.082--ServerSession(1318822808)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [produto] is being defaulted to: PRODUTO_ID.
+[EL Info]: 2019-02-05 15:27:11.857--ServerSession(1318822808)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.0.v20170811-d680af5
+[EL Fine]: connection: 2019-02-05 15:27:12.301--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Config]: connection: 2019-02-05 15:27:12.324--ServerSession(1318822808)--Connection(860481979)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>PostgreSQLPlatform
+	user name=> "postgres"
+	datasource URL=> "jdbc:postgresql://10.0.4.159:5432/loja"
+))
+[EL Config]: connection: 2019-02-05 15:27:12.456--ServerSession(1318822808)--Connection(1083962448)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://10.0.4.159:5432/loja
+	User: postgres
+	Database: PostgreSQL  Version: 9.5.14
+	Driver: PostgreSQL Native Driver  Version: PostgreSQL 9.4 JDBC4.1 (build 1206)
+[EL Info]: connection: 2019-02-05 15:27:12.63--ServerSession(1318822808)--Thread(Thread[main,5,main])--/file:/F:/IFPB/P4/POB/Workspace_POB_18.2/TesteLock/target/classes/_loja-eclipselink login successful
+[EL Fine]: sql: 2019-02-05 15:27:12.977--ServerSession(1318822808)--Connection(1083962448)--Thread(Thread[main,5,main])--SELECT ID, ESTOQUE, NOME, PRECO, VERSAO FROM PRODUTO WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2019-02-05 15:27:38.22--ClientSession(1600667055)--Connection(1083962448)--Thread(Thread[main,5,main])--UPDATE PRODUTO SET ESTOQUE = ?, VERSAO = ? WHERE ((ID = ?) AND (VERSAO = ?))
+	bind => [-27, 33, 1, 32]
+[EL Fine]: sql: 2019-02-05 15:27:38.231--ClientSession(1600667055)--Connection(1083962448)--Thread(Thread[main,5,main])--INSERT INTO VENDA (VENDEDOR, PRODUTO_ID) VALUES (?, ?)
+	bind => [meu nome é john oliver, 1]
+[EL Fine]: sql: 2019-02-05 15:27:38.24--ClientSession(1600667055)--Connection(1083962448)--Thread(Thread[main,5,main])--select lastval()
+[EL Config]: connection: 2019-02-05 15:27:38.271--ServerSession(1318822808)--Connection(1083962448)--Thread(Thread[main,5,main])--disconnect
+[EL Info]: connection: 2019-02-05 15:27:38.272--ServerSession(1318822808)--Thread(Thread[main,5,main])--/file:/F:/IFPB/P4/POB/Workspace_POB_18.2/TesteLock/target/classes/_loja-eclipselink logout successful
+[EL Config]: connection: 2019-02-05 15:27:38.272--ServerSession(1318822808)--Connection(860481979)--Thread(Thread[main,5,main])--disconnect

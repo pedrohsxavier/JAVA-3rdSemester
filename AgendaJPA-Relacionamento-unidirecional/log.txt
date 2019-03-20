@@ -1,0 +1,120 @@
+[EL Fine]: server: 2018-12-04 13:33:17.523--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2018-12-04 13:33:18.178--ServerSession(1268650975)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Compromisso] is set to [FIELD].
+[EL Config]: metadata: 2018-12-04 13:33:18.282--ServerSession(1268650975)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Pessoa] is set to [FIELD].
+[EL Config]: metadata: 2018-12-04 13:33:18.314--ServerSession(1268650975)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field compromissos] is being defaulted to: class modelo.Compromisso.
+[EL Config]: metadata: 2018-12-04 13:33:18.328--ServerSession(1268650975)--Thread(Thread[main,5,main])--The target class (reference) class for the element collection mapping element [field logradouros] is being defaulted to: class modelo.Logradouro.
+[EL Config]: metadata: 2018-12-04 13:33:18.329--ServerSession(1268650975)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field telefones] is being defaulted to: class modelo.Telefone.
+[EL Config]: metadata: 2018-12-04 13:33:18.329--ServerSession(1268650975)--Thread(Thread[main,5,main])--The target class (reference) class for the element collection mapping element [field apelidos] is being defaulted to: class java.lang.String.
+[EL Config]: metadata: 2018-12-04 13:33:18.33--ServerSession(1268650975)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Telefone] is set to [FIELD].
+[EL Config]: metadata: 2018-12-04 13:33:18.331--ServerSession(1268650975)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field pessoa] is being defaulted to: class modelo.Pessoa.
+[EL Config]: metadata: 2018-12-04 13:33:18.331--ServerSession(1268650975)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Logradouro] is set to [FIELD].
+[EL Config]: metadata: 2018-12-04 13:33:18.334--ServerSession(1268650975)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Compromisso] is being defaulted to: Compromisso.
+[EL Config]: metadata: 2018-12-04 13:33:18.336--ServerSession(1268650975)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Compromisso] is being defaulted to: COMPROMISSO.
+[EL Config]: metadata: 2018-12-04 13:33:18.423--ServerSession(1268650975)--Thread(Thread[main,5,main])--The column name for element [data] is being defaulted to: DATA.
+[EL Config]: metadata: 2018-12-04 13:33:18.431--ServerSession(1268650975)--Thread(Thread[main,5,main])--The column name for element [descricao] is being defaulted to: DESCRICAO.
+[EL Config]: metadata: 2018-12-04 13:33:18.431--ServerSession(1268650975)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Pessoa] is being defaulted to: Pessoa.
+[EL Config]: metadata: 2018-12-04 13:33:18.431--ServerSession(1268650975)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Pessoa] is being defaulted to: PESSOA.
+[EL Config]: metadata: 2018-12-04 13:33:18.432--ServerSession(1268650975)--Thread(Thread[main,5,main])--The column name for element [bairro] is being defaulted to: BAIRRO.
+[EL Config]: metadata: 2018-12-04 13:33:18.432--ServerSession(1268650975)--Thread(Thread[main,5,main])--The column name for element [rua] is being defaulted to: RUA.
+[EL Config]: metadata: 2018-12-04 13:33:18.432--ServerSession(1268650975)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2018-12-04 13:33:18.433--ServerSession(1268650975)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2018-12-04 13:33:18.433--ServerSession(1268650975)--Thread(Thread[main,5,main])--The column name for element [sexo] is being defaulted to: SEXO.
+[EL Config]: metadata: 2018-12-04 13:33:18.439--ServerSession(1268650975)--Thread(Thread[main,5,main])--The column name for element [dtcadastro] is being defaulted to: DTCADASTRO.
+[EL Config]: metadata: 2018-12-04 13:33:18.44--ServerSession(1268650975)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Telefone] is being defaulted to: Telefone.
+[EL Config]: metadata: 2018-12-04 13:33:18.44--ServerSession(1268650975)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Telefone] is being defaulted to: TELEFONE.
+[EL Config]: metadata: 2018-12-04 13:33:18.44--ServerSession(1268650975)--Thread(Thread[main,5,main])--The column name for element [numero] is being defaulted to: NUMERO.
+[EL Config]: metadata: 2018-12-04 13:33:18.441--ServerSession(1268650975)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2018-12-04 13:33:18.492--ServerSession(1268650975)--Thread(Thread[main,5,main])--The collection table name for the basic collection/map mapping [field apelidos] is being defaulted to: Pessoa_APELIDOS.
+[EL Config]: metadata: 2018-12-04 13:33:18.493--ServerSession(1268650975)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field apelidos] is being defaulted to: ID.
+[EL Config]: metadata: 2018-12-04 13:33:18.493--ServerSession(1268650975)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [apelidos] is being defaulted to: Pessoa_ID.
+[EL Config]: metadata: 2018-12-04 13:33:18.495--ServerSession(1268650975)--Thread(Thread[main,5,main])--The value column name for the basic collection/map mapping element mapping element [apelidos] is being defaulted to: APELIDOS.
+[EL Fine]: metadata: 2018-12-04 13:33:18.499--Thread(Thread[main,5,main])--java.lang.ClassNotFoundException: java.util.Listjava.lang.String
+[EL Config]: metadata: 2018-12-04 13:33:18.507--ServerSession(1268650975)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field compromissos] is being defaulted to: ID.
+[EL Config]: metadata: 2018-12-04 13:33:18.524--ServerSession(1268650975)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field pessoa] is being defaulted to: ID.
+[EL Config]: metadata: 2018-12-04 13:33:18.524--ServerSession(1268650975)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [pessoa] is being defaulted to: PESSOA_ID.
+[EL Config]: metadata: 2018-12-04 13:33:18.531--ServerSession(1268650975)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field logradouros] is being defaulted to: ID.
+[EL Info]: 2018-12-04 13:33:19.315--ServerSession(1268650975)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.3.v20180807-4be1041
+[EL Fine]: connection: 2018-12-04 13:33:19.625--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Config]: connection: 2018-12-04 13:33:19.645--ServerSession(1268650975)--Connection(306612792)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>PostgreSQLPlatform
+	user name=> "postgres"
+	datasource URL=> "jdbc:postgresql://localhost:5432/agenda"
+))
+[EL Config]: connection: 2018-12-04 13:33:19.682--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5432/agenda
+	User: postgres
+	Database: PostgreSQL  Version: 9.4.1
+	Driver: PostgreSQL Native Driver  Version: PostgreSQL 9.4 JDBC4.2 (build 1206)
+[EL Info]: connection: 2018-12-04 13:33:19.818--ServerSession(1268650975)--Thread(Thread[main,5,main])--/file:/E:/IFPB/P4/POB/Workspace_POB_18.2/AgendaJPA-Relacionamento-unidirecional/bin/_agenda-eclipselink login successful
+[EL Fine]: sql: 2018-12-04 13:33:19.949--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--CREATE TABLE COMPROMISSO (DATA TIMESTAMP NOT NULL, DESCRICAO VARCHAR(255), idpessoa INTEGER, PRIMARY KEY (DATA))
+[EL Fine]: sql: 2018-12-04 13:33:20.014--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--CREATE TABLE PESSOA (ID  SERIAL NOT NULL, DTCADASTRO TIMESTAMP, NOME VARCHAR(255), SEXO VARCHAR(255), PRIMARY KEY (ID))
+[EL Fine]: sql: 2018-12-04 13:33:20.061--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--CREATE TABLE TELEFONE (ID  SERIAL NOT NULL, NUMERO VARCHAR(255), PESSOA_ID INTEGER, PRIMARY KEY (ID))
+[EL Fine]: sql: 2018-12-04 13:33:20.072--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--CREATE TABLE tablogradouros (BAIRRO VARCHAR(30), RUA VARCHAR(100), idpessoa INTEGER)
+[EL Fine]: sql: 2018-12-04 13:33:20.078--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--CREATE TABLE Pessoa_APELIDOS (Pessoa_ID INTEGER, APELIDOS VARCHAR(255))
+[EL Fine]: sql: 2018-12-04 13:33:20.107--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--ALTER TABLE COMPROMISSO ADD CONSTRAINT FK_COMPROMISSO_idpessoa FOREIGN KEY (idpessoa) REFERENCES PESSOA (ID)
+[EL Fine]: sql: 2018-12-04 13:33:20.122--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--ALTER TABLE TELEFONE ADD CONSTRAINT FK_TELEFONE_PESSOA_ID FOREIGN KEY (PESSOA_ID) REFERENCES PESSOA (ID)
+[EL Fine]: sql: 2018-12-04 13:33:20.126--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--ALTER TABLE tablogradouros ADD CONSTRAINT FK_tablogradouros_idpessoa FOREIGN KEY (idpessoa) REFERENCES PESSOA (ID)
+[EL Fine]: sql: 2018-12-04 13:33:20.164--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--ALTER TABLE Pessoa_APELIDOS ADD CONSTRAINT FK_Pessoa_APELIDOS_Pessoa_ID FOREIGN KEY (Pessoa_ID) REFERENCES PESSOA (ID)
+[EL Fine]: sql: 2018-12-04 13:33:20.371--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (DTCADASTRO, NOME, SEXO) VALUES (?, ?, ?)
+	bind => [2018-12-04 13:33:20.349, joao, MASCULINO]
+[EL Fine]: sql: 2018-12-04 13:33:20.379--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2018-12-04 13:33:20.392--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO tablogradouros (idpessoa, BAIRRO, RUA) VALUES (?, ?, ?)
+	bind => [1, 58031, rua1]
+[EL Fine]: sql: 2018-12-04 13:33:20.396--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO tablogradouros (idpessoa, BAIRRO, RUA) VALUES (?, ?, ?)
+	bind => [1, 58031, rua2]
+[EL Fine]: sql: 2018-12-04 13:33:20.397--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO COMPROMISSO (DATA, DESCRICAO) VALUES (?, ?)
+	bind => [2018-12-07 00:00:00.0, prova de pob]
+[EL Fine]: sql: 2018-12-04 13:33:20.399--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO COMPROMISSO (DATA, DESCRICAO) VALUES (?, ?)
+	bind => [2018-12-05 00:00:00.0, entrevista]
+[EL Fine]: sql: 2018-12-04 13:33:20.4--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO TELEFONE (NUMERO, PESSOA_ID) VALUES (?, ?)
+	bind => [8888 2222, 1]
+[EL Fine]: sql: 2018-12-04 13:33:20.401--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2018-12-04 13:33:20.402--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO TELEFONE (NUMERO, PESSOA_ID) VALUES (?, ?)
+	bind => [8888 1111, 1]
+[EL Fine]: sql: 2018-12-04 13:33:20.403--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2018-12-04 13:33:20.405--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO Pessoa_APELIDOS (Pessoa_ID, APELIDOS) VALUES (?, ?)
+	bind => [1, joaozinho]
+[EL Fine]: sql: 2018-12-04 13:33:20.407--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO Pessoa_APELIDOS (Pessoa_ID, APELIDOS) VALUES (?, ?)
+	bind => [1, jota]
+[EL Fine]: sql: 2018-12-04 13:33:20.408--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO Pessoa_APELIDOS (Pessoa_ID, APELIDOS) VALUES (?, ?)
+	bind => [1, jojo]
+[EL Fine]: sql: 2018-12-04 13:33:20.409--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO Pessoa_APELIDOS (Pessoa_ID, APELIDOS) VALUES (?, ?)
+	bind => [1, zinho]
+[EL Fine]: sql: 2018-12-04 13:33:20.413--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--UPDATE COMPROMISSO SET idpessoa = ? WHERE (DATA = ?)
+	bind => [1, 2018-12-07 00:00:00.0]
+[EL Fine]: sql: 2018-12-04 13:33:20.416--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--UPDATE COMPROMISSO SET idpessoa = ? WHERE (DATA = ?)
+	bind => [1, 2018-12-05 00:00:00.0]
+[EL Fine]: sql: 2018-12-04 13:33:20.445--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (DTCADASTRO, NOME, SEXO) VALUES (?, ?, ?)
+	bind => [2018-12-04 13:33:20.44, maria, FEMININO]
+[EL Fine]: sql: 2018-12-04 13:33:20.446--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2018-12-04 13:33:20.447--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO tablogradouros (idpessoa, BAIRRO, RUA) VALUES (?, ?, ?)
+	bind => [2, 58031, rua3]
+[EL Fine]: sql: 2018-12-04 13:33:20.448--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO tablogradouros (idpessoa, BAIRRO, RUA) VALUES (?, ?, ?)
+	bind => [2, 58031, rua4]
+[EL Fine]: sql: 2018-12-04 13:33:20.449--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO COMPROMISSO (DATA, DESCRICAO) VALUES (?, ?)
+	bind => [2018-12-21 00:00:00.0, chopptime]
+[EL Fine]: sql: 2018-12-04 13:33:20.449--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO COMPROMISSO (DATA, DESCRICAO) VALUES (?, ?)
+	bind => [2018-12-22 00:00:00.0, cinema]
+[EL Fine]: sql: 2018-12-04 13:33:20.45--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO COMPROMISSO (DATA, DESCRICAO) VALUES (?, ?)
+	bind => [2018-12-20 00:00:00.0, praia]
+[EL Fine]: sql: 2018-12-04 13:33:20.452--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO TELEFONE (NUMERO, PESSOA_ID) VALUES (?, ?)
+	bind => [8888 3333, 2]
+[EL Fine]: sql: 2018-12-04 13:33:20.453--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2018-12-04 13:33:20.454--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO TELEFONE (NUMERO, PESSOA_ID) VALUES (?, ?)
+	bind => [8888 4444, 2]
+[EL Fine]: sql: 2018-12-04 13:33:20.455--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2018-12-04 13:33:20.455--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO Pessoa_APELIDOS (Pessoa_ID, APELIDOS) VALUES (?, ?)
+	bind => [2, mariazinha]
+[EL Fine]: sql: 2018-12-04 13:33:20.456--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO Pessoa_APELIDOS (Pessoa_ID, APELIDOS) VALUES (?, ?)
+	bind => [2, ma]
+[EL Fine]: sql: 2018-12-04 13:33:20.457--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--UPDATE COMPROMISSO SET idpessoa = ? WHERE (DATA = ?)
+	bind => [2, 2018-12-20 00:00:00.0]
+[EL Fine]: sql: 2018-12-04 13:33:20.458--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--UPDATE COMPROMISSO SET idpessoa = ? WHERE (DATA = ?)
+	bind => [2, 2018-12-22 00:00:00.0]
+[EL Fine]: sql: 2018-12-04 13:33:20.459--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--UPDATE COMPROMISSO SET idpessoa = ? WHERE (DATA = ?)
+	bind => [2, 2018-12-21 00:00:00.0]
+[EL Fine]: sql: 2018-12-04 13:33:20.464--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (DTCADASTRO, NOME, SEXO) VALUES (?, ?, ?)
+	bind => [2018-12-04 13:33:20.462, jose, MASCULINO]
+[EL Fine]: sql: 2018-12-04 13:33:20.474--ClientSession(925308434)--Connection(447212746)--Thread(Thread[main,5,main])--select lastval()
+[EL Config]: connection: 2018-12-04 13:33:20.477--ServerSession(1268650975)--Connection(447212746)--Thread(Thread[main,5,main])--disconnect
+[EL Info]: connection: 2018-12-04 13:33:20.477--ServerSession(1268650975)--Thread(Thread[main,5,main])--/file:/E:/IFPB/P4/POB/Workspace_POB_18.2/AgendaJPA-Relacionamento-unidirecional/bin/_agenda-eclipselink logout successful
+[EL Config]: connection: 2018-12-04 13:33:20.477--ServerSession(1268650975)--Connection(306612792)--Thread(Thread[main,5,main])--disconnect

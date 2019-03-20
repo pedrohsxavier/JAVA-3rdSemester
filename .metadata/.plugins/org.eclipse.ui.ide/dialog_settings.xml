@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Pedro\Desktop\EmpresaJPA-consultas"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="401" key="DIALOG_HEIGHT"/>
+		<item value="710" key="DIALOG_X_ORIGIN"/>
+		<item value="253" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Pedro\Desktop\SeminarioCriteriaAPI"/>
+			<item value="Z:\20161370021.IFPB\Desktop\SeminarioCriteriaAPI"/>
+			<item value="C:\Users\IFPB\Downloads\TesteLock"/>
+			<item value="C:\Users\IFPB\Downloads\AgendaJPA-Eventos"/>
+			<item value="Z:\20161370021\Downloads\Loja-combo"/>
+			<item value="Z:\20161370021\Downloads\AgendaJPA-Relacionamento-unidirecional"/>
+			<item value="D:\IFPB\P4\POB\Workspace_POB_18.2\AgendaJPA-Basico"/>
+			<item value="F:\IFPB\P4\POB\Workspace_POB_18.2\agendajdbc-dao"/>
+			<item value="F:\IFPB\P4\POB\Workspace_POB_18.2\EmpresaDB4O-exercicio"/>
+			<item value="E:\IFPB\P4\POB\Workspace_POB_18.2\Servidor-db4o"/>
+			<item value="E:\IFPB\P4\POB\Workspace_POB_18.2\TesteCliente-db4o"/>
+			<item value="E:\IFPB\P4\POB\Workspace_POB_18.2\LojaDB4O-dao"/>
+			<item value="F:\IFPB\P4\POB\Workspace_POB_18.2\BibliotecaDB4O-Basico-exercicio"/>
+			<item value="C:\Users\IFPB\Downloads\BibliotecaDB4O-Basico-exercicio"/>
+			<item value="D:\IFPB\P4\POB\Workspace_POB_18.2\AgendaDB4O-Basico-V2"/>
+			<item value="D:\IFPB\P4\POB\Workspace_POB_18.2\AgendaDB4O-Basico"/>
+			<item value="Z:\20161370021\Downloads\AgendaDB4O-Basico"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="F:\IFPB\P4\POB\Workspace_POB_18.2\AgendaDB4O-Basico-V2\banco.db4o"/>
+		</list>
+	</section>
+</section>
